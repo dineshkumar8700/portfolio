@@ -54,7 +54,7 @@ main {
   width: 100vw;
   height: 100vh;
   padding: 50px;
-  background-image: url("/assets/macbook.jpg");
+  background-image: url("assets/macbook.jpg");
   background-size: cover;
   background-position: 50% 60%;
   overflow-x: hidden;
