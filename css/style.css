@@ -54,7 +54,7 @@ main {
   width: 100vw;
   height: 100vh;
   padding: 50px;
-  background-image: url("assets/macbook.jpg");
+  background-image: url("../assets/macbook.jpg");
   background-size: cover;
   background-position: 50% 60%;
   overflow-x: hidden;
@@ -80,7 +80,7 @@ article {
 }
 
 .page-icon {
-  padding: 15px 10px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -90,13 +90,14 @@ article {
 }
 
 .page-icon img {
-  width: 40px;
+  width: 35px;
   padding-bottom: 15px;
 }
 
 .page-icon p {
   color: #ccc9c9;
   font-size: 12px;
+  text-decoration: none;
 }
 
 footer {
@@ -116,7 +117,6 @@ footer {
   margin: 0 auto;
   transition: all 0.1s;
   box-shadow: 0 0 1px #908c8c;
-  align-self: center;
 }
 
 .dock-item img {
@@ -144,4 +144,47 @@ footer {
 .dock-item:hover img {
   transition: all 0.2s;
   transform: scale(1.4);
+}
+
+.loading-animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mac-svg-loader {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.loader-container {
+  background-color: #726f6f;
+  width: 200px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.loader {
+  background-color: #fff;
+  height: 100%;
+  animation: loading 2s ease;
+  border-radius: 5px;
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
